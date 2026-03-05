@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página de Cadastro</title>
+  </head>
+  <body>
+    <h1>Página de Cadastro</h1>
+    <form action="/cadastroRealizado">
+      <fieldset>
+        <legend>Crie sua conta</legend>
+        <label for="">Nome:</label>
+        <br />
+        <input type="text" />
+        <br />
+        <br />
+        <label for="">E-mail:</label>
+        <br />
+        <input type="email" required placeholder="seuemail@dominio.com" name="" id="" />
+        <br />
+        <br />
+        <label for="">Senha (mínimo 8 caracteres):</label>
+        <br>
+        <input type="password" required name="" id="">
+        <br><br>
+        <strong><label for="">Gênero</label></strong>
+        <br>    
+        <br>
+        <div>
+            <input type="radio" name="genero" id="">
+            <label for="">Feminino</label>
+        </div>
+        <div>
+            <input type="radio" name="genero" id="">
+            <label for="">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" name="genero" id="">
+            <label for="">Outro</label>
+        </div>
+        <br>
+        <label for="">Biografia:</label>
+        <br>
+        <textarea name="" id="" placeholder="Fale um pouco sobre você..." rows="5"></textarea>
+        <br>
+        <input type="checkbox" name="" required id="">
+        <label for="">Eu li e aceito os termos de serviço.</label>
+      </fieldset>
+      <br>
+      <button type="submit">Cadastrar</button>
+      <button type="reset">Limpar</button>
+    </form>
+  </body>
+</html>
