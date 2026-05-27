@@ -10,6 +10,8 @@ import Button from "../components/Button";
 import "../styles/hero.css"
 import "../styles/solution.css";
 import Card from "../components/Card";
+import "../styles/testimonials.css";
+import TestimonialCard from "../components/TestimonialCard";
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -153,6 +155,73 @@ export default function Home() {
                     </Card>
                 </section>
             </section>
+            <section id="testimonials">
+                <header>
+                    <span>
+                        <p className="desktop-only">
+                            Conselho de quem conhece
+                        </p>
+                        <h2>Quem cria também aprova!</h2>
+                    </span>
+                    <p>
+                        Quem trabalha conosco conhece o nosso compromisso com a qualidade.
+                        Estamos mudando a ideia de que o processo de publicação precisa ser complicado.
+                        Acompanhe abaixo os depoimentos de quem aprova nosso suporte.
+                    </p>
+                </header>
+                <section className="carousel">
+                    <div className="carousel-content">
+                        <TestimonialCard
+                            nome="Kei Urana"
+                            cargo="Mangaká (Gachiakuta)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509324629754253353/web-profile-kei-urana.png?ex=6a18c399&is=6a177219&hm=113178061e68ee833039b84c1311c7b5f3876831209773290e30b6a66a5bf9e2"
+                            descricao="O suporte com os prazos e a qualidade da diagramação final são excelentes. Sinto total liberdade para focar na arte."
+                            nota={5}
+                        ></TestimonialCard>
+
+                        <TestimonialCard
+                            nome="Atsushi Ohkubo"
+                            cargo="Mangaká (Soul Eater / Fire Force)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509329372056916048/web-profile-atsushi-ohkubo.jpeg?ex=6a18c804&is=6a177684&hm=e6dbf8b806749e9fae15c023c0c8aeef3ba5636c39501cfeab37c65f09d36df6"
+                            descricao="Uma equipe que realmente entende o ritmo de um autor. A assistência gráfica faz toda a diferença no resultado das páginas."
+                            nota={4}
+                        ></TestimonialCard>
+
+                        <TestimonialCard
+                            nome="Hiro Mashima"
+                            cargo="Mangaká (Fairy Tail)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509330092801790002/web-profile-hiro-mashima.png?ex=6a18c8b0&is=6a177730&hm=cb2a2fc6d5ccdd515ccaa71493e281a4b62fce72641ed3f7b0b3f4b862ecb519"
+                            descricao="A velocidade de resposta e a atenção aos detalhes na revisão são impressionantes. Perfeito para manter meu fluxo de publicação."
+                            nota={5}
+                        ></TestimonialCard>
+                    </div>
+                    <div className="carousel-content">
+                        <TestimonialCard
+                            nome="Kei Urana"
+                            cargo="Mangaká (Gachiakuta)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509324629754253353/web-profile-kei-urana.png?ex=6a18c399&is=6a177219&hm=113178061e68ee833039b84c1311c7b5f3876831209773290e30b6a66a5bf9e2"
+                            descricao="O suporte com os prazos e a qualidade da diagramação final são excelentes. Sinto total liberdade para focar na arte."
+                            nota={5}
+                        ></TestimonialCard>
+
+                        <TestimonialCard
+                            nome="Atsushi Ohkubo"
+                            cargo="Mangaká (Soul Eater / Fire Force)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509329372056916048/web-profile-atsushi-ohkubo.jpeg?ex=6a18c804&is=6a177684&hm=e6dbf8b806749e9fae15c023c0c8aeef3ba5636c39501cfeab37c65f09d36df6"
+                            descricao="Uma equipe que realmente entende o ritmo de um autor. A assistência gráfica faz toda a diferença no resultado das páginas."
+                            nota={4}
+                        ></TestimonialCard>
+
+                        <TestimonialCard
+                            nome="Hiro Mashima"
+                            cargo="Mangaká (Fairy Tail)"
+                            imagem="https://cdn.discordapp.com/attachments/1509324250694287382/1509330092801790002/web-profile-hiro-mashima.png?ex=6a18c8b0&is=6a177730&hm=cb2a2fc6d5ccdd515ccaa71493e281a4b62fce72641ed3f7b0b3f4b862ecb519"
+                            descricao="A velocidade de resposta e a atenção aos detalhes na revisão são impressionantes. Perfeito para manter meu fluxo de publicação."
+                            nota={5}
+                        ></TestimonialCard>
+                    </div>
+                </section>
+            </section >
         </>
     )
 }
