@@ -12,6 +12,8 @@ import "../styles/solution.css";
 import Card from "../components/Card";
 import "../styles/testimonials.css";
 import TestimonialCard from "../components/TestimonialCard";
+import "../styles/pricing.css";
+import Check from "../assets/check.svg"
 
 export default function Home() {
     const [showMobileMenu, setShowMobileMenu] = useState(false);
@@ -222,6 +224,91 @@ export default function Home() {
                     </div>
                 </section>
             </section >
+
+            <section id="pricing" className="container">
+                <header>
+                    <p className="desktop-only">Planos e preços</p>
+                    <h2>Nossos planos</h2>
+                </header>
+                <section className="even-columns gap-1.5">
+
+                    <div className="pricing-card">
+                        <span className="plan">
+                            <h3>Iniciante</h3>
+                            <p>Ideal para quem está conhecendo a plataforma e quer ler casualmente.</p>
+                        </span>
+                        <h2>Grátis</h2>
+                        <Button text="Começar agora" secondary key="free" />
+                        <span className="hr" />
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Leitura com anúncios</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Acesso a mais de 100 títulos</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Qualidade padrão de imagem</p>
+                        </span>
+                    </div>
+
+                    <div className="pricing-card premium">
+                        <span className="bonus">
+                            <p>MAIS POPULAR</p>
+                        </span>
+                        <span className="plan">
+                            <h3>Premium Otaku</h3>
+                            <p>Para leitores ávidos que querem acompanhar os lançamentos do Japão.</p>
+                        </span>
+                        <span className="price">
+                            <h2>R$ 19,90</h2>
+                            <p>/mês</p>
+                        </span>
+                        <Button text="Assinar agora" key="premium" />
+                        <span className="hr" />
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Sem anúncios e interrupções</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Capítulos no mesmo dia do Japão</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Leitura offline pelo app</p>
+                        </span>
+                    </div>
+
+                    <div className="pricing-card">
+                        <span className="plan">
+                            <h3>VIP Colecionador</h3>
+                            <p>O plano definitivo para quem apoia a indústria e ama benefícios físicos.</p>
+                        </span>
+                        <span className="price">
+                            <h2>R$ 49,90</h2>
+                            <p>/mês</p>
+                        </span>
+                        <Button text="Seja VIP" secondary key="enterprise" />
+                        <span className="hr" />
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Tudo do plano Premium Otaku</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>1 Mangá físico por mês (brinde)</p>
+                        </span>
+                        <span className="features">
+                            <img src={Check} alt="ícone check" width={24} height={24} />
+                            <p>Descontos exclusivos em eventos</p>
+                        </span>
+                    </div>
+
+                </section>
+            </section>
         </>
     )
 }
