@@ -3,7 +3,6 @@
     flex-direction: column;
     padding-block: 4rem;
     gap: 2rem;
-    height: 100vh;
 
     header {
         display: flex;
